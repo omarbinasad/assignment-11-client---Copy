@@ -61,8 +61,7 @@ const useFirebase = () => {
     setIsLoggedIn(e.target.checked);
   };
 
-  const signInUsingGoogle = () => {
-    
+  const signInUsingGoogle = () => { 
     setIsLoading(true);
     const googleProvider = new GoogleAuthProvider();
     return signInWithPopup(auth, googleProvider);
